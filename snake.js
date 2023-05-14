@@ -362,7 +362,7 @@ document.querySelector('.pause').onclick = function(){
 }
 
 function powerup(){
-    if(segment.length>=5 && power_timer-last_time>11){
+    if(segment.length>=6 && power_timer-last_time>15){
         if(powerupOn==0){
             powerupOn=1;
             
