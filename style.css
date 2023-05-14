@@ -1,0 +1,151 @@
+
+.Area{
+    display: grid;
+    background-color: rgb(246, 246, 246);
+    width:60vmin;
+    height: 60vmin;
+    border: 20px solid black;
+    margin:0 auto ;
+    margin-top: auto 150px ;
+
+}
+@keyframes blink{
+    from{
+        display:none;
+    }to{
+        background-color: green;
+        border:2px solid black;
+    }
+}
+
+
+    
+.snake{
+    background-color: yellow;
+    border: 0.3vmin solid rgb(14, 196, 18);
+}
+
+.food{
+    font-weight: bold;
+    font-size: x-large;
+    border:  2px solid black;
+}
+
+.foodBlocks{
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:50vmin;
+    height:5vmin;
+    margin:0 auto;
+    margin-top:2px;
+    padding:10px;
+    font-size: 50px;
+    
+
+}
+.color{
+    width:17.5vmin;
+    border: 3px solid black;
+}
+
+.info{
+    
+    margin-top: 2px;
+    margin-bottom: 10px;
+    margin:0 auto;
+    display:flex;
+    width:80vmin;
+    height:8vmin;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.img{
+    object-fit: cover;
+}
+.page{
+    justify-content: center;
+    width: fit-content;
+    block-size: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.up{
+
+    margin-top:10px;
+    height: 50px;
+    width:80px;
+    object-fit: cover;
+}
+.lr{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+
+    
+    height: 80px;
+    width:50px;
+    object-fit: cover;
+    
+}
+.right{
+    height: 80px;
+    width:50px;
+    object-fit: cover;
+}
+.down{
+
+    height: 50px;
+    width:80px;
+    object-fit: cover;
+}
+.pause{
+    margin-left: 30px;
+    margin-right: 30px;;
+    height: 50px;
+    width: 35px;
+    object-fit: cover;
+}
+.life{
+    max-height: 40px;
+    object-fit: cover;
+}
+.letter{
+    color: rgb(12, 180, 51);
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 2px 2px #2b2626;
+}
+
+body{
+    justify-content: center;
+
+    align-items: center;
+    height:90%;
+    overflow:hidden;
+}
+@media only screen and (max-width: 768px) {
+    h1 {
+      display:'none';
+    }
+    .food{
+        font-size: small;
+    }
+  }
+
+.powerup{
+    animation-name: blink;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    
+}
